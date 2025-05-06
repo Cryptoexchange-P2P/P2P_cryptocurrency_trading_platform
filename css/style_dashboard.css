@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.maincontainer {
+    max-width: 600px;
+    height: 800px;
+    max-height: 1000px;
+    margin: 50px auto;
+    padding: 20px;  
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*estilos de la barra de opciones */
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    align-items: center;
+    color: white;
+    padding: 10px 10px;
+    width: auto;
+    z-index: 1000;
+}
+.menubar .actions {
+    display: flex;
+}
+
+.menubar .actions .action-btn:hover {
+    background-color: #555;
+}
+.content {
+    padding: 80px 20px; /* Add padding to avoid overlap with fixed navbar */
+}
+
+/*imagenes del menubar */
+
+.menubar-logo {
+    height: 40px; /* Ajusta el tamaño del logotipo */
+    width: auto; /* Mantén la proporción del logotipo */
+    padding: 0px 10px 0px 10px;
+}
+.spacer {
+    height: 40px; /* Ajusta el tamaño del logotipo */
+    width: 250px; /* Mantén la proporción del logotipo */
+    padding: 0px 10px 0px 10px;
+}
+/*accioens del menubar */
+.btn-user {
+    height: 40px; /* Ajusta el tamaño boton idioma */
+    width: auto; /* Mantén la proporción del logotipo */
+    vertical-align: middle;
+    padding: 0px 10px 0px 10px;
+}
+.btn-configuration {
+    height: 40px; /* Ajusta el tamaño boton bright */
+    width: auto; /* Mantén la proporción del logotipo */
+}
+
+.btn-support {
+    height: 40px; /* Ajusta el tamaño boton idioma */
+    width: auto; /* Mantén la proporción del logotipo */
+}
+
+
+/*estilos del navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 5px;
+    /*position: fixed;*/
+    width: auto;
+    z-index: 1000;
+}
+.navbar .tabs {
+    display: flex;
+}
+.navbar .tabs .tab {
+    margin-right: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+}
+.navbar .tabs .tab:hover {
+    background-color: #555;
+}
+.navbar .tabs .tab.active {
+    background-color: #222;
+}
+
+/*estilo pestanas */
+.tabs {
+    display: flex;
+    background-color: #333;
+    padding: 0px 10px 0px 10px;
+}
+.tab {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    background-color: #444;
+    
+}
+.tab:hover {
+    background-color: #555;
+}
+.tab.active {
+    background-color: #222;
+}
+.content {
+    padding: 20px;
+    display: none;
+}
+.content.active {
+    display: block;
+}

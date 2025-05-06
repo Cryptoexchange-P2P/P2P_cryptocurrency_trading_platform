@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="menubar">
+            <div class="actions">
+                <img src="images/logo.jpg" alt="Logo" class="menubar-logo">
+                <div class="spacer">   </div>
+                <a class="action-btn">  username  <img src="images/lang.png" alt="Img language" class="btn-user"></a>
+                <a href="#" class="action-btn"><img src="images/brightness.png" alt="Img bright" class="btn-configuration"></a>
+            
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="tabs">
+                
+                <div class="tab active" onclick="showContent('inicio')">Inicio</div>
+                <div class="tab" onclick="showContent('cambiar')">Cambiar</div>
+                <div class="tab" onclick="showContent('intercambio')">Intercambio P2P</div>
+                <div class="tab" onclick="showContent('earn')">Gana</div>
+                <div class="tab" onclick="showContent('actividad')">Actividad</div>
+                <div class="tab" onclick="showContent('tutoriales')">Tutoriales</div>
+            </div>
+        </div>
+
+        <div id="inicio" class="content active">
+            
+        
+        </div>
+
+        <div id="cambiar" class="content">
+            
+
+
+
+
+        </div>
+
+        <div id="intercambio" class="content">
+            <h1>GUÍA de Uso</h1>
+            <p>Mecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.</p>
+        </div>
+
+        <div id="earn" class="content">
+            <h1>GUÍA de Uso</h1>
+            <p>Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.</p>
+        </div>
+
+        <div id="actividad" class="content">
+            <h1>Últimas Publicaciones en el BLOG</h1>
+            <p>Fusce ac felis sit amet ligula pharetra condimentum. Maecenas vestibulum mollis diam. Pellentesque ut neque.</p>
+        </div>
+
+        <div id="tutoriales" class="content">
+            <h1>GUÍA de Uso</h1>
+            <p>Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.</p>
+        </div>
+    
+    </div>
+    <script src="js/dash.js"></script>
+</body>
+</html>
