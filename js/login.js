@@ -9,7 +9,15 @@ const registerButton = document.getElementById('register-button');
 togglePasswordButton.addEventListener('click', () => {
     const type = passwordInput.type === 'password' ? 'text' : 'password';
     passwordInput.type = type;
-    //togglePasswordButton.textContent = type === 'password' ? 'Mostrar' : 'Ocultar';
+    const img = document.getElementById("eye_icon");
+    let eyeimg = 1;
+    if (type === 'text') {
+      img.src = "images/icon/eye-off.png";
+      eyeimg = 2;
+    } else {
+      img.src = "images/icon/eye.png";
+      eyeimg = 1;
+    }
 });
 
 // Redirigir al registro

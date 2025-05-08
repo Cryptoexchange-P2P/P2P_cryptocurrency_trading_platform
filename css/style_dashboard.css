@@ -40,42 +40,40 @@ body {
 /*imagenes del menubar */
 
 .menubar-logo {
-    height: 40px; /* Ajusta el tamaño del logotipo */
-    width: auto; /* Mantén la proporción del logotipo */
+    height: 40px;
+    width: auto;
     padding: 0px 10px 0px 10px;
 }
 .spacer {
-    height: 40px; /* Ajusta el tamaño del logotipo */
-    width: 250px; /* Mantén la proporción del logotipo */
+    height: 40px;
+    width: 250px;
     padding: 0px 10px 0px 10px;
 }
 /*accioens del menubar */
 .btn-user {
-    height: 40px; /* Ajusta el tamaño boton idioma */
-    width: auto; /* Mantén la proporción del logotipo */
+    height: 40px;
+    width: auto;
     vertical-align: middle;
     padding: 0px 10px 0px 10px;
 }
 .btn-configuration {
-    height: 40px; /* Ajusta el tamaño boton bright */
-    width: auto; /* Mantén la proporción del logotipo */
+    height: 40px;
+    width: auto; 
 }
 
 .btn-support {
-    height: 40px; /* Ajusta el tamaño boton idioma */
-    width: auto; /* Mantén la proporción del logotipo */
+    height: 40px;
+    width: auto;
 }
 
 
-/*estilos del navbar */
+/*estilos del navbar contenedor de pestanas */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    color: white;
     padding: 10px 5px;
-    /*position: fixed;*/
     width: auto;
     z-index: 1000;
 }
@@ -86,9 +84,9 @@ body {
     margin-right: 15px;
     padding: 10px 15px;
     cursor: pointer;
-    background-color: #444;
+    background-color: #333;
     color: white;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 .navbar .tabs .tab:hover {
     background-color: #555;
@@ -97,26 +95,36 @@ body {
     background-color: #222;
 }
 
-/*estilo pestanas */
 .tabs {
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: start; /* centrar horizontalmente */
+    justify-items: right;
     background-color: #333;
-    padding: 0px 10px 0px 10px;
+    max-width: 100%;
+    gap: 6px;
 }
 .tab {
-    flex: 1;
+    grid: 1;
+    aspect-ratio: 1 / 1;
     text-align: center;
     font-size: 12px;
     color: white;
     cursor: pointer;
-    background-color: #444;
-    
+    background-color: #555;
+}
+.icons {
+    height: 40px;
+    width: auto; /* Mantén la proporción del logotipo */
+    vertical-align: middle;
+
 }
 .tab:hover {
     background-color: #555;
 }
 .tab.active {
-    background-color: #222;
+    background-color: #555;
 }
 .content {
     padding: 20px;

@@ -14,8 +14,17 @@ togglePasswordButton.addEventListener('click', () => {
     const type = passwordInput.type === 'password' ? 'text' : 'password';
     passwordInput.type = type;
     repeatPasswordInput.type = type;
-    //togglePasswordButton.textContent = type === 'password' ? 'Mostrar' : 'Ocultar';
+    const img = document.getElementById("eye_icon");
+    let eyeimg = 1;
+    if (type === 'text') {
+      img.src = "images/icon/eye-off.png";
+      eyeimg = 2;
+    } else {
+      img.src = "images/icon/eye.png";
+      eyeimg = 1;
+    }  
 });
+
 
 // Validar correo electrónico
 emailInput.addEventListener('input', () => {

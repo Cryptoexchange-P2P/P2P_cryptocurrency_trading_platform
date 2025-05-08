@@ -1,5 +1,7 @@
-//Funcion que controla las pestanas de inicio
+const passwordInput = document.getElementById('balance');
+const togglePasswordButton = document.getElementById('toggle-password');
 
+//Funcion que controla las pestanas
 function showContent(tabId) {
     // Ocultar todo el contenido
     const contents = document.querySelectorAll('.content');
@@ -15,19 +17,17 @@ function showContent(tabId) {
     // Activar la pestaña seleccionada
     event.target.classList.add('active');
 }
-
-// Selecciona el botón "Registrarse"
-const registerButton = document.getElementById('btn-register');
-
-// Agrega un evento para abrir otra pestaña
-registerButton.addEventListener('click', () => {
-    window.open('register.html', '_blank'); // Abre register.html en una nueva pestaña
-});
-
-// Selecciona el botón "Iniciar Sesión"
-const loginButton = document.getElementById('btn-login');
-
-// Agrega un evento para abrir otra pestaña
-loginButton.addEventListener('click', () => {
-    window.open('login.html', '_blank'); // Abre login.html en una nueva pestaña
+// Mostrar/ocultar saldo
+togglePasswordButton.addEventListener('click', () => {
+    const type = passwordInput.type === 'password' ? 'text' : 'password';
+    passwordInput.type = type;
+    const img = document.getElementById("eye_icon");
+    let eyeimg = 1;
+    if (type === 'text') {
+      img.src = "images/icon/eye-off.png";
+      eyeimg = 2;
+    } else {
+      img.src = "images/icon/eye.png";
+      eyeimg = 1;
+    }
 });
