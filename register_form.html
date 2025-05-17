@@ -9,14 +9,22 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #1E1E1E;
         }
         .container {
             max-width: 600px;
             margin: 50px auto;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid #F4C542;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 25px #F4C542;
+            background-color: #4D4D4D;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #dddddd;
         }
         .header-buttons {
             display: flex;
@@ -26,24 +34,25 @@
         .header-buttons button {
             padding: 10px 15px;
             cursor: pointer;
-            background-color: #007BFF;
-            color: white;
+            background-color: #26A17B;
+            color: #1E1E1E;
+            font-weight: bold;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
         }
         .header-buttons button:hover {
-            background-color: #0056b3;
+            background-color: #218838;
         }
         .progress-bar {
             height: 10px;
-            background-color: #ccc;
+            background-color: #20c490;
             border-radius: 5px;
             overflow: hidden;
             margin-bottom: 20px;
         }
         .progress-bar div {
             height: 100%;
-            background-color: #007BFF;
+            background-color: #F4C542;
             width: 33%; /* Default to step 1 */
         }
         .form-step {
@@ -62,8 +71,8 @@
         .form-group input, .form-group select {
             width: 90%;
             padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 1px solid #26A17B;
+            border-radius: 15px;
         }
         .form-buttons {
             display: flex;
@@ -72,21 +81,25 @@
         .form-buttons button {
             padding: 10px 15px;
             cursor: pointer;
-            background-color: #007BFF;
-            color: white;
+            background-color: #F4C542;
+            color: #1E1E1E;
+            font-weight: bold;
+            font-size: 17px;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
+            width: 150px;
+            height: 50px;
         }
         .form-buttons button:hover {
-            background-color: #0056b3;
+            background-color: #eeb006;
         }   
         
         #SupportButton {
-            background-color: #6c757d; /* Color gris para el botón de atrás */
+            background-color: #F4C542; /* Color gris para el botón de atrás */
             border-radius: 30px;
         }
         #SupportButton:hover {
-            background-color: #8a939c;
+            background-color: #eeb006;
         }
         
         .btn-customer-service {

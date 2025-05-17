@@ -36,3 +36,8 @@ export default function App() {
     </div>
   );
 }
+/*"use client"
+            import CryptoExchange from "js/crypto-exchange"
+            export default function Page() {
+            return <CryptoExchange />
+            }*/

@@ -1,7 +1,7 @@
 /* General */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #1E1E1E;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,10 +12,10 @@ body {
 
 /* Contenedor del formulario */
 .register-container {
-    background-color: #ffffff;
+    background-color: #4D4D4D;
     padding: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 25px #F4C542;
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -23,7 +23,7 @@ body {
 
 /* Logo */
 .logo {
-    width: 100px;
+    width: 200px;
     margin-bottom: 20px;
 }
 
@@ -37,7 +37,7 @@ label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #dddddd;
 }
 
 input[type="text"],
@@ -45,7 +45,8 @@ input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #26A17B
+;
     border-radius: 5px;
     font-size: 14px;
     box-sizing: border-box;
@@ -54,9 +55,9 @@ input[type="password"] {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
-    border-color: #007bff;
+    border-color: #F4C542;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 5px #F4C542;
 }
 
 /* Botón para mostrar/ocultar contraseña */
@@ -87,7 +88,7 @@ input[type="password"]:focus {
 
 /* Mensaje de error */
 .error-message {
-    color: red;
+    color: rgb(255, 80, 80);
     font-size: 12px;
     margin-top: 5px;
 }
@@ -114,19 +115,26 @@ button {
 }
 
 #login-button {
-    background-color: #6c757d;
-    color: white;
+    background-color: #F4C542;
+    color: #4D4D4D;
+    font-weight: bold;
+    border-radius: 25px;
 }
 
 #login-button:hover {
-    background-color: #5a6268;
+    background-color: #eeb006;
 }
 
 #register-button {
-    background-color: #28a745;
-    color: white;
+    background-color: #26A17B;
+    color: #4D4D4D;
+    font-weight: bold;
+    border-radius: 25px;
 }
 
 #register-button:hover {
     background-color: #218838;
+}
+#register-body{
+    background-color: #1E1E1E;
 }

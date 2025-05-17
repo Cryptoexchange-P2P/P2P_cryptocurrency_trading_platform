@@ -1,4 +1,4 @@
-const passwordInput = document.getElementById('balance');
+const passwordInput = document.getElementById('tbalance');
 const togglePasswordButton = document.getElementById('toggle-password');
 
 //Funcion que controla las pestanas
